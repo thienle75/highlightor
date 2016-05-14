@@ -1,0 +1,13 @@
+{
+  "title": "Highlightor",
+  "name": "highlightor",
+  "id": "jid1-s1ODq4YWum3hhQ@jetpack",
+  "version": "0.1.4",
+  "description": "Highlight important text of any websites",
+  "main": "index.js",
+  "author": "Le Trong",
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MIT"
+}

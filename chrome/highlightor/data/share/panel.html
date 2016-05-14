@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				min-width: 180px;
+				min-height: 140px;
+				font-size: 16px;
+				font-family: 'Open Sans', sans-serif;
+				color: gray;
+				background-color: #FAFAFA;
+			}
+			.color-picker {
+				display: block;
+				margin: 10px 0 5px;
+				text-align: center;
+			}
+			.color-picker div {
+				width: 23px;
+				height: 23px;
+				border: 1px solid #111;
+				border-radius: 12px;
+				margin: 5px 8px;
+				display: inline-block;
+				cursor: pointer;
+			}
+			.color-picker div:hover {
+				border: 1px solid #444;
+			}
+			.color-picker div.selected {
+				box-shadow: #666 0 0 4px 2px;
+			}
+			hr.style-two {
+				border: 0;
+				height: 1px;
+				background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+			}
+		</style>
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+	</head>
+	<body>
+		<div style="text-align: center; margin-top: 10px;">Highlight Color</div>
+		<hr class="style-two"/>
+		<div class="color-picker"></div>
+		<hr class="style-two"/>
+		<div style="text-align:center">
+			<style scoped>
+				.button-success,
+				.button-error,
+				.button-warning,
+				.button-secondary {
+					color: white;
+					border-radius: 4px;
+					text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+					font-size: 12px;
+				}
+				.button-success {
+					background: rgb(28, 184, 65); /* this is a green */
+				}
+				.button-error {
+					background: rgb(202, 60, 60); /* this is a maroon */
+				}
+				.button-warning {
+					background: rgb(223, 117, 20); /* this is an orange */
+				}
+				.button-secondary {
+					background: rgb(66, 184, 221); /* this is a light blue */
+				}
+			</style>
+			<button id="cleanBtn" class="button-success pure-button">Clean</button>
+			<button id="bigBangBtn" class="button-error pure-button">Big Bang!!!</button>
+		</div>
+		<script src="../lib/panel.js"></script>
+	</body>
+</html>
